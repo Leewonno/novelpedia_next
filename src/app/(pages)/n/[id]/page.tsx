@@ -1,17 +1,16 @@
 export default async function Novel({
   params,
-  searchParams,
+  // searchParams,
 }: {
   params: Promise<{ id: string }>;
   searchParams: Promise<{ v?: string }>;
 }) {
   const { id } = await params;
-  const { v } = await searchParams;
+  // const { v } = await searchParams;
 
   return (
     <>
-      {id}
-      {v && <p>Version: {v}</p>}
+      <div>타이틀 {id}</div>
     </>
   );
 }
