@@ -1,11 +1,13 @@
 export function Header() {
-  const isLogin = false;
+  const isLogin = true;
   return (
-    <header>
-      <div>로고</div>
-      <div>
-        {isLogin ? <div>로그아웃</div> : <div>로그인</div>}
-        {isLogin ? <div>마이페이지</div> : <></>}
+    <header className="w-full h-16 flex justify-center items-center px-4">
+      <div className="w-300 flex justify-between">
+        <div>NOVELPEDIA</div>
+        <div className="flex gap-4">
+          {isLogin ? <div>로그아웃</div> : <div>로그인</div>}
+          {isLogin ? <div>마이페이지</div> : <></>}
+        </div>
       </div>
     </header>
   );

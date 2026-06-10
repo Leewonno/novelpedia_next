@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/features";
+import { Footer, Header } from "@/features";
 
 export const metadata: Metadata = {
   title: "노벨피디아",
@@ -17,6 +17,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
