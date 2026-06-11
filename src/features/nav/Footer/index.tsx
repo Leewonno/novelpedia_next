@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full flex justify-center h-25">
+    <footer className="w-full flex justify-center h-25 border-t border-gray-200">
       <div className="w-300 h-full flex flex-col justify-center gap-4">
         <div className="flex gap-4">
           <Link href={"/"}>공지사항</Link>
