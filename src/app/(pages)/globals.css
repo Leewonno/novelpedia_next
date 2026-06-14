@@ -15,8 +15,11 @@
   font-family: "Pretendard", sans-serif;
 }
 
+@theme {
+  --color-brand: #10b981;
+}
+
 :root {
-  --brand-color: #10b981;
   --background-color0: #ffffff;
   --background-color1: #f7f7f8;
   --background-color2: #eeeef0;
