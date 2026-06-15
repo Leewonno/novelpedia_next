@@ -19,6 +19,17 @@
   --color-brand: #10b981;
 }
 
+/* CSS 변수를 Tailwind 유틸리티로 연결.
+   inline 이어야 다크모드 등 런타임 변수 변경이 그대로 반영됨. */
+@theme inline {
+  --color-background-0: var(--background-color0);
+  --color-background-1: var(--background-color1);
+  --color-background-2: var(--background-color2);
+  --color-foreground-0: var(--foreground-color0);
+  --color-foreground-1: var(--foreground-color1);
+  --color-foreground-2: var(--foreground-color2);
+}
+
 :root {
   --background-color0: #ffffff;
   --background-color1: #f7f7f8;
