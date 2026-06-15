@@ -1,4 +1,8 @@
-import { HomeBanner } from "@/features";
+import {
+  HomeBanner,
+  HomePopularContainer,
+  HomeRecentUpdateContainer,
+} from "@/features";
 
 export default function Home() {
   return (
@@ -6,11 +10,11 @@ export default function Home() {
       {/* 배너 */}
       <HomeBanner />
       {/* 인기 작품 */}
-      <div>인기 작품</div>
+      <HomePopularContainer />
       {/* 최근 수정된 작품 */}
-      <div>최근 수정된 작품</div>
+      <HomeRecentUpdateContainer />
       {/* 최근 생성된 작품 */}
-      <div>최근 생성된 작품</div>
+      <HomeRecentUpdateContainer />
     </div>
   );
 }
