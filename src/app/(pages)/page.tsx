@@ -1,6 +1,7 @@
 import {
   HomeBanner,
   HomePopularContainer,
+  HomeRecentCreateContainer,
   HomeRecentUpdateContainer,
 } from "@/features";
 
@@ -14,7 +15,7 @@ export default function Home() {
       {/* 최근 수정된 작품 */}
       <HomeRecentUpdateContainer />
       {/* 최근 생성된 작품 */}
-      <HomeRecentUpdateContainer />
+      <HomeRecentCreateContainer />
     </div>
   );
 }
