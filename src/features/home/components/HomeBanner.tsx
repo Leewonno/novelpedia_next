@@ -1,6 +1,6 @@
 export function HomeBanner() {
   return (
-    <div className="w-full bg-gray-100 rounded-lg flex items-center justify-space-between p-8">
+    <div className="w-full bg-background-1 rounded-lg flex items-center justify-space-between p-8">
       {/* 텍스트 상자 */}
       <div className="w-1/2 flex flex-col gap-4">
         {/* 소개 문구 */}
@@ -21,7 +21,7 @@ export function HomeBanner() {
           <input
             type="text"
             placeholder="검색..."
-            className="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-foreground-2 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-brand"
           />
         </div>
       </div>
