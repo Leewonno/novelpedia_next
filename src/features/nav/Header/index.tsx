@@ -4,7 +4,7 @@ import { Logo } from "@/shared/components/Logo";
 export function Header() {
   const isLogin = false;
   return (
-    <header className="w-full h-14 flex justify-center items-center px-4 border-b border-gray-200">
+    <header className="w-full h-14 flex justify-center items-center px-4 border-b border-gray-200 z-10">
       <div className="w-300 flex justify-between">
         <div>
           <Link href={"/"}>
