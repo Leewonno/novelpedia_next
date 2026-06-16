@@ -1,6 +1,9 @@
 import { HomeBanner, HomeCardContainer } from "@/features";
 
-export default function Home() {
+export default async function Home() {
+  // TODO: 로딩 UI 확인용 임시 지연. 실제 데이터 연동 시 제거.
+  await new Promise((resolve) => setTimeout(resolve, 1500));
+
   return (
     <div className="w-full flex flex-col items-center gap-8">
       {/* 배너 */}
