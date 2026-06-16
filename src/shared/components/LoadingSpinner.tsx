@@ -6,7 +6,7 @@ export function LoadingSpinner() {
     <div className={`flex h-full w-full items-center justify-center`}>
       <output
         aria-label="로딩 중"
-        className="inline-block animate-spin rounded-full border-background-2 border-t-brand"
+        className="inline-block animate-spin rounded-full border-background-1 border-t-brand"
         style={{
           width: 32,
           height: 32,

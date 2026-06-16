@@ -27,7 +27,7 @@ export function HomeCardContainer({ title }: HomeCardContainerProps) {
             disabled={!canScrollLeft}
             aria-label="이전"
           >
-            <ChevronLeftIcon className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 bg-background-2 rounded-full p-1 text-foreground-1" />
+            <ChevronLeftIcon className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 bg-background-1 rounded-full p-1 text-foreground-1" />
           </button>
           <button
             type="button"
@@ -36,7 +36,7 @@ export function HomeCardContainer({ title }: HomeCardContainerProps) {
             disabled={!canScrollRight}
             aria-label="다음"
           >
-            <ChevronRightIcon className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 bg-background-2 rounded-full p-1 text-foreground-1" />
+            <ChevronRightIcon className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 bg-background-1 rounded-full p-1 text-foreground-1" />
           </button>
         </div>
       </div>
