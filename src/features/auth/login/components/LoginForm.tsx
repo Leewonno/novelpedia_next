@@ -23,7 +23,7 @@ export function LoginForm() {
         <Link href="/signup" aria-label="회원가입">
           회원가입
         </Link>
-        <Link href="/forgot-password" aria-label="비밀번호 찾기">
+        <Link href="/find-password" aria-label="비밀번호 찾기">
           비밀번호 찾기
         </Link>
       </div>
