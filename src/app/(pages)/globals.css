@@ -28,6 +28,18 @@
   --color-foreground-0: var(--foreground-color0);
   --color-foreground-1: var(--foreground-color1);
   --color-foreground-2: var(--foreground-color2);
+
+  /* 스켈레톤 빛 흐름 효과 */
+  --animate-shimmer: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 :root {
