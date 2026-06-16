@@ -1,6 +1,6 @@
-export function HomeBanner() {
+export async function HomeBanner() {
   return (
-    <div className="w-full bg-background-1 rounded-lg flex items-center justify-space-between p-12">
+    <div className="w-full bg-background-2 rounded-lg flex items-center justify-space-between p-12">
       {/* 텍스트 상자 */}
       <div className="w-1/2 flex flex-col gap-4">
         {/* 소개 문구 */}
