@@ -12,7 +12,10 @@ export function LoginForm() {
         <div className="flex flex-col gap-2">
           <AuthInput type="text" placeholder="아이디" />
           <AuthInput type="password" placeholder="비밀번호" />
-          <AuthButton icon={<LogIn />} type="submit">
+          <AuthButton
+            icon={<LogIn className="w-4 text-foreground-2" />}
+            type="submit"
+          >
             로그인
           </AuthButton>
         </div>

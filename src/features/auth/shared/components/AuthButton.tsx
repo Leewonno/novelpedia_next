@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { ReactNode } from "react";
 
 type AuthButtonProps = {
@@ -15,7 +14,9 @@ export function AuthButton({ onClick, children, type, icon }: AuthButtonProps) {
       className="relative w-full h-11 font-semibold rounded-lg cursor-pointer border border-background-3 outline-brand-glow hover:bg-background-3 text-black transition-colors active:bg-background-0"
       onClick={onClick}
     >
-      <div className="absolute w-3 h-3 left-1">{icon}</div>
+      <div className="absolute left-3 flex items-center justify-center">
+        {icon}
+      </div>
       {children}
     </button>
   );
