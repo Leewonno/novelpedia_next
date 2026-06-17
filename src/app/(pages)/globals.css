@@ -16,21 +16,27 @@
 }
 
 @theme {
-  --color-brand: #10b981;
 }
 
 /* CSS 변수를 Tailwind 유틸리티로 연결.
    inline 이어야 다크모드 등 런타임 변수 변경이 그대로 반영됨. */
 @theme inline {
+  --color-brand: var(--brand-color);
+  --color-brand-glow: var(--brand-glow-color);
+
   --color-background-0: var(--background-color0);
   --color-background-1: var(--background-color1);
   --color-background-2: var(--background-color2);
+  --color-background-3: var(--background-color3);
+  --color-background-4: var(--background-color4);
   --color-foreground-0: var(--foreground-color0);
   --color-foreground-1: var(--foreground-color1);
   --color-foreground-2: var(--foreground-color2);
+  --color-foreground-3: var(--foreground-color3);
+  --color-foreground-4: var(--foreground-color4);
 
   /* 스켈레톤 빛 흐름 효과 */
-  --animate-shimmer: shimmer 1.6s ease-in-out infinite;
+  --animate-shimmer: shimmer 1s ease-in-out infinite;
 }
 
 @keyframes shimmer {
@@ -43,25 +49,38 @@
 }
 
 :root {
-  --background-color0: #ffffff;
-  --background-color1: #f7f7f8;
-  --background-color2: #eeeef0;
-  --foreground-color0: #17171a;
-  --foreground-color1: #5a5a62;
-  --foreground-color2: #9a9aa2;
-  /* --line: #e5e5e8; */
-  /* --accent-soft: #ffe5ed; */
+  --brand-color: #10b981;
+  --brand-glow-color: #10b98173;
+
+  /* backgrounds: 밝음(0) → 어두움(4) */
+  --background-color0: #fdfdfd;
+  --background-color1: #f7f9f8;
+  --background-color2: #edf2f0;
+  --background-color3: #e2e9e7;
+  --background-color4: #d5dfdc;
+
+  /* foregrounds: 어두움(0) → 밝음(4) */
+  --foreground-color0: #151c19;
+  --foreground-color1: #546962;
+  --foreground-color2: #95a7a1;
+  --foreground-color3: #b7c2be;
+  --foreground-color4: #d3d9d7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color0: #0f0f12;
-    --background-color1: #17171c;
-    --background-color2: #22222a;
-    --foreground-color0: #f0f0f3;
-    --foreground-color1: #a8a8b2;
-    --foreground-color2: #6a6a74;
-    /* --line: #2a2a32; */
-    /* --accent-soft: #2a1520; */
+    /* backgrounds: 0(기본/가장 어두움) → 4(상위면/가장 밝음) */
+    --background-color0: #141c1a;
+    --background-color1: #1c2623;
+    --background-color2: #25312d;
+    --background-color3: #313f3b;
+    --background-color4: #3d4d48;
+
+    /* foregrounds: 0(주요 텍스트/가장 밝음) → 4(가장 어두움) */
+    --foreground-color0: #ecefee;
+    --foreground-color1: #c2ccc9;
+    --foreground-color2: #94a8a1;
+    --foreground-color3: #6f8b82;
+    --foreground-color4: #5a726a;
   }
 }
