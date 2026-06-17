@@ -8,7 +8,7 @@ export function AuthInput({ type, placeholder }: AuthInputProps) {
     <input
       type={type}
       placeholder={placeholder}
-      className="w-full p-2 rounded-lg border border-background-2 text-black focus:outline-none focus:ring-2 focus:ring-brand transition-colors"
+      className="w-full p-2 rounded-lg border border-background-3 text-black outline-none focus:outline-solid outline-brand-glow focus:outline-2 transition-colors"
     />
   );
 }

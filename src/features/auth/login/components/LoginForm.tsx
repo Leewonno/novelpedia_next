@@ -1,17 +1,20 @@
+import { LogIn } from "lucide-react";
 import Link from "next/link";
 import { AuthButton, AuthInput } from "../../shared";
 import { LoginTitle } from "./common/LoginTitle";
 
 export function LoginForm() {
   return (
-    <div className="w-100 flex flex-col gap-6">
+    <div className="w-80 flex flex-col gap-6">
       <LoginTitle />
       <form className="flex flex-col gap-6">
         {/* 입력창 컨테이너 */}
         <div className="flex flex-col gap-2">
           <AuthInput type="text" placeholder="아이디" />
           <AuthInput type="password" placeholder="비밀번호" />
-          <AuthButton type="submit">로그인</AuthButton>
+          <AuthButton icon={<LogIn />} type="submit">
+            로그인
+          </AuthButton>
         </div>
         {/* 버튼 컨테이너 */}
         <div className="flex flex-col gap-2">
