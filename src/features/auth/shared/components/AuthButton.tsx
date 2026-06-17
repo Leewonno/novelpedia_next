@@ -14,7 +14,7 @@ export function AuthButton({ onClick, children, type, icon }: AuthButtonProps) {
       className="relative w-full h-11 font-semibold rounded-lg cursor-pointer border border-background-3 outline-brand-glow hover:bg-background-3 text-black transition-colors active:bg-background-0"
       onClick={onClick}
     >
-      <div className="absolute left-4 flex items-center justify-center">
+      <div className="absolute left-3 flex items-center justify-center">
         {icon}
       </div>
       {children}
