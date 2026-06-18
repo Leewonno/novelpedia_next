@@ -1,4 +1,4 @@
-import { LogIn } from "lucide-react";
+import { Mail } from "lucide-react";
 import Link from "next/link";
 import { AuthButton, AuthInput } from "../../shared";
 import { LoginTitle } from "./common/LoginTitle";
@@ -13,7 +13,7 @@ export function LoginForm() {
           <AuthInput type="text" placeholder="아이디" />
           <AuthInput type="password" placeholder="비밀번호" />
           <AuthButton
-            icon={<LogIn className="w-4 text-foreground-2" />}
+            icon={<Mail className="w-4 text-foreground-2" />}
             type="submit"
           >
             로그인
