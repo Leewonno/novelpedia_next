@@ -1,10 +1,10 @@
 type AuthInputProps = {
   type: "text" | "email" | "password";
   placeholder: string;
-  className: string;
+  className?: string;
 };
 
-export function AuthInput({ type, placeholder }: AuthInputProps) {
+export function AuthInput({ type, placeholder, className }: AuthInputProps) {
   return (
     <input
       type={type}

@@ -1,5 +1,7 @@
 import { Mail } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import kakaoLoginButton from "@/assets/images/login/kakao_login_large_wide.png";
 import { AuthButton, AuthInput } from "../../shared";
 import { LoginTitle } from "./common/LoginTitle";
 
@@ -13,7 +15,7 @@ export function LoginForm() {
           <AuthInput type="text" placeholder="아이디" />
           <AuthInput type="password" placeholder="비밀번호" />
           <AuthButton
-            icon={<Mail className="w-4 text-foreground-2" />}
+            icon={<Mail className="text-foreground-2" />}
             type="submit"
           >
             로그인
@@ -21,7 +23,9 @@ export function LoginForm() {
         </div>
         {/* 버튼 컨테이너 */}
         <div className="flex flex-col gap-2">
-          <AuthButton type="kakao">카카오 로그인</AuthButton>
+          <AuthButton type="kakao">
+            <Image src={kakaoLoginButton} alt="카카오 로그인 버튼" />
+          </AuthButton>
           <AuthButton type="google">구글 로그인</AuthButton>
         </div>
       </form>
