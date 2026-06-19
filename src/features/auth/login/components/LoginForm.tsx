@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import googleFavicon from "@/assets/images/login/google_favicon.svg";
-import kakaoLoginButton from "@/assets/images/login/kakao_login_large_wide.png";
+import kakaoLoginIcon from "@/assets/images/login/kakao_login_logo.png";
 import { AuthButton, AuthInput } from "../../shared";
 import { LoginTitle } from "./common/LoginTitle";
 
@@ -24,16 +24,16 @@ export function LoginForm() {
         </div>
         {/* 버튼 컨테이너 */}
         <div className="flex flex-col gap-2">
-          <AuthButton type="kakao" className="border-none">
-            <Image
-              src={kakaoLoginButton}
-              alt="카카오 로그인 버튼"
-              className="w-full h-full object-cover"
-            />
+          <AuthButton
+            type="kakao"
+            className="border-none! text-base! bg-[#FEE500]"
+            icon={<Image src={kakaoLoginIcon} alt="카카오 로그인 버튼" />}
+          >
+            카카오 로그인
           </AuthButton>
           <AuthButton
             type="google"
-            className="border-[#767676]"
+            className="border-[#767676]!"
             icon={
               <Image src={googleFavicon} alt="구글 로고" className="w-5 h-5" />
             }
