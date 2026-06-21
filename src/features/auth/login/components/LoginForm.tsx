@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { KeyRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import googleFavicon from "@/assets/images/login/google_favicon.svg";
@@ -16,8 +16,9 @@ export function LoginForm() {
           <AuthInput type="text" placeholder="아이디" />
           <AuthInput type="password" placeholder="비밀번호" />
           <AuthButton
-            icon={<Mail className="text-foreground-2" />}
+            icon={<KeyRound className="text-foreground-2" />}
             type="submit"
+            action={true}
           >
             로그인
           </AuthButton>
@@ -32,6 +33,7 @@ export function LoginForm() {
             카카오 로그인
           </AuthButton>
           <AuthButton
+            action={true}
             type="google"
             className="border-[#767676]!"
             icon={
@@ -43,10 +45,14 @@ export function LoginForm() {
         </div>
       </form>
       <div className="flex justify-center gap-4 text-sm">
-        <Link href="/signup" aria-label="회원가입">
+        <Link href="/signup" aria-label="회원가입" className="hover:underline">
           회원가입
         </Link>
-        <Link href="/find-password" aria-label="비밀번호 찾기">
+        <Link
+          href="/find-password"
+          aria-label="비밀번호 찾기"
+          className="hover:underline"
+        >
           비밀번호 찾기
         </Link>
       </div>
